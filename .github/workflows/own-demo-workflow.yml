@@ -1,11 +1,10 @@
 name: Own Demo Workflow
 on: workflow_dispatch
-
 jobs:
-  name: Multiline Shell Commands
-  runs-on: ubuntu-latest
-  steps:
-    -name: Executing Multiline Shell Commands
-    -run: |
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Executing Multiline Shell Commands
+      - run: |
             echo "First Line"
             echo "Second Line"
